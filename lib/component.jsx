@@ -19,6 +19,7 @@ require("itsa-dom");
 const React = require("react"),
     PropTypes = React.PropTypes,
     MAIN_CLASS = "itsa-anchorbutton",
+    FORM_ELEMENT_CLASS_SPACES = " itsa-formelement",
     ReactDom = require("react-dom"),
     utils = require("itsa-utils"),
     later = utils.later;
@@ -224,7 +225,7 @@ const Component = React.createClass({
      * @since 15.0.0
      */
     render() {
-        let className = MAIN_CLASS;
+        let className = MAIN_CLASS+FORM_ELEMENT_CLASS_SPACES;
         const instance = this,
             props = instance.props,
             propsClass = props.className;

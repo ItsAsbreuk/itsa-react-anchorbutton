@@ -31,7 +31,7 @@ describe("React Component", function () {
         const expected = (
             <a
                 autoFocus={false}
-                className="itsa-anchorbutton"
+                className="itsa-anchorbutton itsa-formelement"
                 disabled={false}
                 href="#"
                 onClick={function noRefCheck() {}}
@@ -46,7 +46,7 @@ describe("React Component", function () {
         const expected = (
             <a
                 autoFocus={false}
-                className="itsa-anchorbutton"
+                className="itsa-anchorbutton itsa-formelement"
                 disabled={true}
                 href="#"
                 onClick={function noRefCheck() {}}
@@ -61,7 +61,7 @@ describe("React Component", function () {
         const expected = (
             <a
                 autoFocus={false}
-                className="itsa-anchorbutton"
+                className="itsa-anchorbutton itsa-formelement"
                 disabled={false}
                 href="#"
                 onClick={function noRefCheck() {}}
@@ -76,7 +76,7 @@ describe("React Component", function () {
         const expected = (
             <a
                 autoFocus={true}
-                className="itsa-anchorbutton"
+                className="itsa-anchorbutton itsa-formelement"
                 disabled={false}
                 href="#"
                 onClick={function noRefCheck() {}}
@@ -91,7 +91,7 @@ describe("React Component", function () {
         const expected = (
             <a
                 autoFocus={false}
-                className="itsa-anchorbutton test"
+                className="itsa-anchorbutton itsa-formelement test"
                 disabled={false}
                 href="#"
                 onClick={function noRefCheck() {}}

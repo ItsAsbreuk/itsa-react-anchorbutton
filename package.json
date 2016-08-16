@@ -1,6 +1,6 @@
 {
   "name": "itsa-react-anchorbutton",
-  "version": "15.0.5",
+  "version": "15.0.7",
   "description": "Just a standard simple styling of the anchor-element into button-alike",
   "author": [
     {
@@ -37,7 +37,7 @@
     "react-dom": "^15.0.1"
   },
   "dependencies": {
-    "itsa-dom": "^1.1.9",
+    "itsa-dom": "^1.1.11",
     "itsa-utils": "^1.1.0"
   },
   "devDependencies": {

@@ -55,130 +55,7 @@
     "classitems": [
         {
             "file": "lib/component.jsx",
-            "line": 29,
-            "description": "Whether to autofocus the Component.",
-            "itemtype": "property",
-            "name": "autoFocus",
-            "type": "Boolean",
-            "since": "0.0.1",
-            "class": "Component",
-            "module": "itsa-react-anchorbutton.jsx"
-        },
-        {
-            "file": "lib/component.jsx",
-            "line": 38,
-            "description": "The Component its children",
-            "itemtype": "property",
-            "name": "children",
-            "type": "String || Object || Array",
-            "since": "15.0.0",
-            "class": "Component",
-            "module": "itsa-react-anchorbutton.jsx"
-        },
-        {
-            "file": "lib/component.jsx",
-            "line": 48,
-            "description": "Additional classname for the Component.",
-            "itemtype": "property",
-            "name": "className",
-            "type": "String",
-            "since": "15.0.0",
-            "class": "Component",
-            "module": "itsa-react-anchorbutton.jsx"
-        },
-        {
-            "file": "lib/component.jsx",
-            "line": 57,
-            "description": "Whether the button is disabled",
-            "itemtype": "property",
-            "name": "disabled",
-            "type": "Boolean",
-            "since": "0.0.1",
-            "class": "Component",
-            "module": "itsa-react-anchorbutton.jsx"
-        },
-        {
-            "file": "lib/component.jsx",
-            "line": 66,
-            "description": "The url for the anchor-element.",
-            "default": "\"#\"",
-            "itemtype": "property",
-            "name": "href",
-            "type": "String",
-            "since": "0.0.1",
-            "class": "Component",
-            "module": "itsa-react-anchorbutton.jsx"
-        },
-        {
-            "file": "lib/component.jsx",
-            "line": 76,
-            "description": "The name-attribute of the button",
-            "itemtype": "property",
-            "name": "name",
-            "type": "String",
-            "since": "0.0.1",
-            "class": "Component",
-            "module": "itsa-react-anchorbutton.jsx"
-        },
-        {
-            "file": "lib/component.jsx",
-            "line": 85,
-            "description": "Callback whenever the button gets clicked by the left mousebutton.",
-            "itemtype": "property",
-            "name": "onClick",
-            "type": "Function",
-            "since": "0.0.1",
-            "class": "Component",
-            "module": "itsa-react-anchorbutton.jsx"
-        },
-        {
-            "file": "lib/component.jsx",
-            "line": 94,
-            "description": "Whether the checkbox is readonly",
-            "itemtype": "property",
-            "name": "readOnly",
-            "type": "Boolean",
-            "default": "false",
-            "since": "15.2.0",
-            "class": "Component",
-            "module": "itsa-react-anchorbutton.jsx"
-        },
-        {
-            "file": "lib/component.jsx",
-            "line": 104,
-            "description": "Inline style",
-            "itemtype": "property",
-            "name": "style",
-            "type": "object",
-            "since": "0.0.1",
-            "class": "Component",
-            "module": "itsa-react-anchorbutton.jsx"
-        },
-        {
-            "file": "lib/component.jsx",
-            "line": 113,
-            "description": "The tabIndex\nDefault: 1",
-            "itemtype": "property",
-            "name": "tabIndex",
-            "type": "Number",
-            "since": "0.0.1",
-            "class": "Component",
-            "module": "itsa-react-anchorbutton.jsx"
-        },
-        {
-            "file": "lib/component.jsx",
-            "line": 123,
-            "description": "The anchor-target where the response should go into.",
-            "itemtype": "property",
-            "name": "target",
-            "type": "String",
-            "since": "0.0.1",
-            "class": "Component",
-            "module": "itsa-react-anchorbutton.jsx"
-        },
-        {
-            "file": "lib/component.jsx",
-            "line": 133,
+            "line": 28,
             "description": "Blurs the Component.",
             "itemtype": "method",
             "name": "blur",
@@ -189,7 +66,7 @@
         },
         {
             "file": "lib/component.jsx",
-            "line": 146,
+            "line": 41,
             "description": "componentDidMount does some initialization.",
             "itemtype": "method",
             "name": "componentDidMount",
@@ -199,7 +76,7 @@
         },
         {
             "file": "lib/component.jsx",
-            "line": 160,
+            "line": 55,
             "description": "componentWilUnmount does some cleanup.",
             "itemtype": "method",
             "name": "componentWillUnmount",
@@ -209,7 +86,7 @@
         },
         {
             "file": "lib/component.jsx",
-            "line": 170,
+            "line": 65,
             "description": "Sets the focus on the Component.",
             "itemtype": "method",
             "name": "focus",
@@ -228,20 +105,7 @@
         },
         {
             "file": "lib/component.jsx",
-            "line": 184,
-            "description": "Returns the default props.",
-            "itemtype": "method",
-            "name": "getDefaultProps",
-            "return": {
-                "description": "object"
-            },
-            "since": "0.0.1",
-            "class": "Component",
-            "module": "itsa-react-anchorbutton.jsx"
-        },
-        {
-            "file": "lib/component.jsx",
-            "line": 200,
+            "line": 79,
             "description": "Callback-fn for the onClick-event.\nWill invoke `this.props.onClick`",
             "itemtype": "method",
             "name": "handleClick",
@@ -251,7 +115,7 @@
         },
         {
             "file": "lib/component.jsx",
-            "line": 219,
+            "line": 98,
             "description": "React render-method --> renderes the Component.",
             "itemtype": "method",
             "name": "render",
@@ -259,6 +123,129 @@
                 "description": "ReactComponent"
             },
             "since": "15.0.0",
+            "class": "Component",
+            "module": "itsa-react-anchorbutton.jsx"
+        },
+        {
+            "file": "lib/component.jsx",
+            "line": 122,
+            "description": "Whether to autofocus the Component.",
+            "itemtype": "property",
+            "name": "autoFocus",
+            "type": "Boolean",
+            "since": "0.0.1",
+            "class": "Component",
+            "module": "itsa-react-anchorbutton.jsx"
+        },
+        {
+            "file": "lib/component.jsx",
+            "line": 131,
+            "description": "The Component its children",
+            "itemtype": "property",
+            "name": "children",
+            "type": "String || Object || Array",
+            "since": "15.0.0",
+            "class": "Component",
+            "module": "itsa-react-anchorbutton.jsx"
+        },
+        {
+            "file": "lib/component.jsx",
+            "line": 141,
+            "description": "Additional classname for the Component.",
+            "itemtype": "property",
+            "name": "className",
+            "type": "String",
+            "since": "15.0.0",
+            "class": "Component",
+            "module": "itsa-react-anchorbutton.jsx"
+        },
+        {
+            "file": "lib/component.jsx",
+            "line": 150,
+            "description": "Whether the button is disabled",
+            "itemtype": "property",
+            "name": "disabled",
+            "type": "Boolean",
+            "since": "0.0.1",
+            "class": "Component",
+            "module": "itsa-react-anchorbutton.jsx"
+        },
+        {
+            "file": "lib/component.jsx",
+            "line": 159,
+            "description": "The url for the anchor-element.",
+            "default": "\"#\"",
+            "itemtype": "property",
+            "name": "href",
+            "type": "String",
+            "since": "0.0.1",
+            "class": "Component",
+            "module": "itsa-react-anchorbutton.jsx"
+        },
+        {
+            "file": "lib/component.jsx",
+            "line": 169,
+            "description": "The name-attribute of the button",
+            "itemtype": "property",
+            "name": "name",
+            "type": "String",
+            "since": "0.0.1",
+            "class": "Component",
+            "module": "itsa-react-anchorbutton.jsx"
+        },
+        {
+            "file": "lib/component.jsx",
+            "line": 178,
+            "description": "Callback whenever the button gets clicked by the left mousebutton.",
+            "itemtype": "property",
+            "name": "onClick",
+            "type": "Function",
+            "since": "0.0.1",
+            "class": "Component",
+            "module": "itsa-react-anchorbutton.jsx"
+        },
+        {
+            "file": "lib/component.jsx",
+            "line": 187,
+            "description": "Whether the checkbox is readonly",
+            "itemtype": "property",
+            "name": "readOnly",
+            "type": "Boolean",
+            "default": "false",
+            "since": "15.2.0",
+            "class": "Component",
+            "module": "itsa-react-anchorbutton.jsx"
+        },
+        {
+            "file": "lib/component.jsx",
+            "line": 197,
+            "description": "Inline style",
+            "itemtype": "property",
+            "name": "style",
+            "type": "object",
+            "since": "0.0.1",
+            "class": "Component",
+            "module": "itsa-react-anchorbutton.jsx"
+        },
+        {
+            "file": "lib/component.jsx",
+            "line": 206,
+            "description": "The tabIndex\nDefault: 1",
+            "itemtype": "property",
+            "name": "tabIndex",
+            "type": "Number",
+            "since": "0.0.1",
+            "class": "Component",
+            "module": "itsa-react-anchorbutton.jsx"
+        },
+        {
+            "file": "lib/component.jsx",
+            "line": 216,
+            "description": "The anchor-target where the response should go into.",
+            "itemtype": "property",
+            "name": "target",
+            "type": "String",
+            "since": "0.0.1",
             "class": "Component",
             "module": "itsa-react-anchorbutton.jsx"
         }

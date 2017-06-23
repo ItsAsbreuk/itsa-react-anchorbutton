@@ -17,119 +17,21 @@
 require("itsa-dom");
 
 const React = require("react"),
-    PropTypes = React.PropTypes,
+    PropTypes = require("prop-types"),
     MAIN_CLASS = "itsa-anchorbutton",
     FORM_ELEMENT_CLASS_SPACES = " itsa-formelement",
     ReactDom = require("react-dom"),
     utils = require("itsa-utils"),
     later = utils.later;
 
-const Component = React.createClass({
-
-    propTypes: {
-        /**
-         * Whether to autofocus the Component.
-         *
-         * @property autoFocus
-         * @type Boolean
-         * @since 0.0.1
-        */
-        autoFocus: PropTypes.bool,
-
-        /**
-         * The Component its children
-         *
-         * @property children
-         * @type String || Object || Array
-         * @since 15.0.0
-        */
-
-        children: PropTypes.oneOfType([PropTypes.string, PropTypes.object, PropTypes.array]),
-
-        /**
-         * Additional classname for the Component.
-         *
-         * @property className
-         * @type String
-         * @since 15.0.0
-        */
-        className: PropTypes.string,
-
-        /**
-         * Whether the button is disabled
-         *
-         * @property disabled
-         * @type Boolean
-         * @since 0.0.1
-        */
-        disabled: PropTypes.bool,
-
-        /**
-         * The url for the anchor-element.
-         *
-         * @default "#"
-         * @property href
-         * @type String
-         * @since 0.0.1
-        */
-        href: PropTypes.string,
-
-        /**
-         * The name-attribute of the button
-         *
-         * @property name
-         * @type String
-         * @since 0.0.1
-        */
-        name: PropTypes.string,
-
-        /**
-         * Callback whenever the button gets clicked by the left mousebutton.
-         *
-         * @property onClick
-         * @type Function
-         * @since 0.0.1
-        */
-        onClick: PropTypes.func,
-
-        /**
-         * Whether the checkbox is readonly
-         *
-         * @property readOnly
-         * @type Boolean
-         * @default false
-         * @since 15.2.0
-        */
-        readOnly: PropTypes.bool,
-
-        /**
-         * Inline style
-         *
-         * @property style
-         * @type object
-         * @since 0.0.1
-        */
-        style: PropTypes.object,
-
-        /**
-         * The tabIndex
-         * Default: 1
-         *
-         * @property tabIndex
-         * @type Number
-         * @since 0.0.1
-        */
-        tabIndex: PropTypes.number,
-
-        /**
-         * The anchor-target where the response should go into.
-         *
-         * @property target
-         * @type String
-         * @since 0.0.1
-        */
-        target: PropTypes.string
-    },
+class Component extends React.Component {
+    constructor(props) {
+        super(props);
+        const instance = this;
+        instance.blur = instance.blur.bind(instance);
+        instance.focus = instance.focus.bind(instance);
+        instance.handleClick = instance.handleClick.bind(instance);
+    }
 
     /**
      * Blurs the Component.
@@ -142,7 +44,7 @@ const Component = React.createClass({
         var instance = this;
         instance._anchorNode.blur();
         return instance;
-    },
+    }
 
     /**
      * componentDidMount does some initialization.
@@ -156,7 +58,7 @@ const Component = React.createClass({
         if (instance.props.autoFocus) {
             instance._focusLater = later(() => instance.focus(), 50);
         }
-    },
+    }
 
     /**
      * componentWilUnmount does some cleanup.
@@ -166,7 +68,7 @@ const Component = React.createClass({
      */
     componentWillUnmount() {
         this._focusLater && this._focusLater.cancel();
-    },
+    }
 
     /**
      * Sets the focus on the Component.
@@ -180,23 +82,7 @@ const Component = React.createClass({
         var instance = this;
         instance._anchorNode.itsa_focus && instance._anchorNode.itsa_focus(null, null, transitionTime);
         return instance;
-    },
-
-    /**
-     * Returns the default props.
-     *
-     * @method getDefaultProps
-     * @return object
-     * @since 0.0.1
-     */
-    getDefaultProps() {
-        return {
-            autoFocus: false,
-            disabled: false,
-            href: "#",
-            readOnly: false
-        };
-    },
+    }
 
     /**
      * Callback-fn for the onClick-event.
@@ -215,7 +101,7 @@ const Component = React.createClass({
         else {
             e.preventDefault();
         }
-    },
+    }
 
     /**
      * React render-method --> renderes the Component.
@@ -238,7 +124,118 @@ const Component = React.createClass({
             </a>
         );
     }
+}
 
-});
+Component.propTypes = {
+    /**
+     * Whether to autofocus the Component.
+     *
+     * @property autoFocus
+     * @type Boolean
+     * @since 0.0.1
+    */
+    autoFocus: PropTypes.bool,
+
+    /**
+     * The Component its children
+     *
+     * @property children
+     * @type String || Object || Array
+     * @since 15.0.0
+    */
+
+    children: PropTypes.oneOfType([PropTypes.string, PropTypes.object, PropTypes.array]),
+
+    /**
+     * Additional classname for the Component.
+     *
+     * @property className
+     * @type String
+     * @since 15.0.0
+    */
+    className: PropTypes.string,
+
+    /**
+     * Whether the button is disabled
+     *
+     * @property disabled
+     * @type Boolean
+     * @since 0.0.1
+    */
+    disabled: PropTypes.bool,
+
+    /**
+     * The url for the anchor-element.
+     *
+     * @default "#"
+     * @property href
+     * @type String
+     * @since 0.0.1
+    */
+    href: PropTypes.string,
+
+    /**
+     * The name-attribute of the button
+     *
+     * @property name
+     * @type String
+     * @since 0.0.1
+    */
+    name: PropTypes.string,
+
+    /**
+     * Callback whenever the button gets clicked by the left mousebutton.
+     *
+     * @property onClick
+     * @type Function
+     * @since 0.0.1
+    */
+    onClick: PropTypes.func,
+
+    /**
+     * Whether the checkbox is readonly
+     *
+     * @property readOnly
+     * @type Boolean
+     * @default false
+     * @since 15.2.0
+    */
+    readOnly: PropTypes.bool,
+
+    /**
+     * Inline style
+     *
+     * @property style
+     * @type object
+     * @since 0.0.1
+    */
+    style: PropTypes.object,
+
+    /**
+     * The tabIndex
+     * Default: 1
+     *
+     * @property tabIndex
+     * @type Number
+     * @since 0.0.1
+    */
+    tabIndex: PropTypes.number,
+
+    /**
+     * The anchor-target where the response should go into.
+     *
+     * @property target
+     * @type String
+     * @since 0.0.1
+    */
+    target: PropTypes.string
+};
+
+Component.defaultProps = {
+    autoFocus: false,
+    disabled: false,
+    href: "#",
+    readOnly: false
+};
 
 module.exports = Component;

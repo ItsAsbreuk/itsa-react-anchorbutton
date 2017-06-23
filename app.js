@@ -9,7 +9,7 @@ const props = {
     href: "http://itsaserver.io"
 };
 
-const ContainerComponent = React.createClass({
+class ContainerComponent extends React.Component {
     render() {
         return (
             <Component {...this.props} >
@@ -17,7 +17,7 @@ const ContainerComponent = React.createClass({
             </Component>
         );
     }
-});
+}
 
 ReactDOM.render(
     <ContainerComponent {...props} />,

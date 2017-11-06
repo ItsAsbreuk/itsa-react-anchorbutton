@@ -35,7 +35,8 @@ describe("React Component", function () {
                 disabled={false}
                 href="#"
                 onClick={function noRefCheck() {}}
-                readOnly={false} />
+                readOnly={false}
+                ref={function noRefCheck() {}} />
         );
         expect(actual).to.equalJSX(expected);
     });
@@ -50,7 +51,8 @@ describe("React Component", function () {
                 disabled={true}
                 href="#"
                 onClick={function noRefCheck() {}}
-                readOnly={false} />
+                readOnly={false}
+                ref={function noRefCheck() {}} />
         );
         expect(actual).to.equalJSX(expected);
     });
@@ -65,7 +67,8 @@ describe("React Component", function () {
                 disabled={false}
                 href="#"
                 onClick={function noRefCheck() {}}
-                readOnly={true} />
+                readOnly={true}
+                ref={function noRefCheck() {}} />
         );
         expect(actual).to.equalJSX(expected);
     });
@@ -80,7 +83,8 @@ describe("React Component", function () {
                 disabled={false}
                 href="#"
                 onClick={function noRefCheck() {}}
-                readOnly={false} />
+                readOnly={false}
+                ref={function noRefCheck() {}} />
         );
         expect(actual).to.equalJSX(expected);
     });
@@ -95,7 +99,8 @@ describe("React Component", function () {
                 disabled={false}
                 href="#"
                 onClick={function noRefCheck() {}}
-                readOnly={false} />
+                readOnly={false}
+                ref={function noRefCheck() {}} />
         );
         expect(actual).to.equalJSX(expected);
     });

@@ -55,7 +55,7 @@
     "classitems": [
         {
             "file": "lib/component.jsx",
-            "line": 28,
+            "line": 35,
             "description": "Blurs the Component.",
             "itemtype": "method",
             "name": "blur",
@@ -66,7 +66,7 @@
         },
         {
             "file": "lib/component.jsx",
-            "line": 41,
+            "line": 48,
             "description": "componentDidMount does some initialization.",
             "itemtype": "method",
             "name": "componentDidMount",
@@ -76,7 +76,7 @@
         },
         {
             "file": "lib/component.jsx",
-            "line": 55,
+            "line": 61,
             "description": "componentWilUnmount does some cleanup.",
             "itemtype": "method",
             "name": "componentWillUnmount",
@@ -86,7 +86,7 @@
         },
         {
             "file": "lib/component.jsx",
-            "line": 65,
+            "line": 71,
             "description": "Sets the focus on the Component.",
             "itemtype": "method",
             "name": "focus",
@@ -105,7 +105,7 @@
         },
         {
             "file": "lib/component.jsx",
-            "line": 79,
+            "line": 85,
             "description": "Callback-fn for the onClick-event.\nWill invoke `this.props.onClick`",
             "itemtype": "method",
             "name": "handleClick",
@@ -115,7 +115,7 @@
         },
         {
             "file": "lib/component.jsx",
-            "line": 98,
+            "line": 104,
             "description": "React render-method --> renderes the Component.",
             "itemtype": "method",
             "name": "render",
@@ -128,7 +128,7 @@
         },
         {
             "file": "lib/component.jsx",
-            "line": 122,
+            "line": 129,
             "description": "Whether to autofocus the Component.",
             "itemtype": "property",
             "name": "autoFocus",
@@ -139,7 +139,7 @@
         },
         {
             "file": "lib/component.jsx",
-            "line": 131,
+            "line": 138,
             "description": "The Component its children",
             "itemtype": "property",
             "name": "children",
@@ -150,7 +150,7 @@
         },
         {
             "file": "lib/component.jsx",
-            "line": 141,
+            "line": 148,
             "description": "Additional classname for the Component.",
             "itemtype": "property",
             "name": "className",
@@ -161,7 +161,7 @@
         },
         {
             "file": "lib/component.jsx",
-            "line": 150,
+            "line": 157,
             "description": "Whether the button is disabled",
             "itemtype": "property",
             "name": "disabled",
@@ -172,7 +172,7 @@
         },
         {
             "file": "lib/component.jsx",
-            "line": 159,
+            "line": 166,
             "description": "The url for the anchor-element.",
             "default": "\"#\"",
             "itemtype": "property",
@@ -184,7 +184,7 @@
         },
         {
             "file": "lib/component.jsx",
-            "line": 169,
+            "line": 176,
             "description": "The name-attribute of the button",
             "itemtype": "property",
             "name": "name",
@@ -195,7 +195,7 @@
         },
         {
             "file": "lib/component.jsx",
-            "line": 178,
+            "line": 185,
             "description": "Callback whenever the button gets clicked by the left mousebutton.",
             "itemtype": "property",
             "name": "onClick",
@@ -206,7 +206,7 @@
         },
         {
             "file": "lib/component.jsx",
-            "line": 187,
+            "line": 194,
             "description": "Whether the checkbox is readonly",
             "itemtype": "property",
             "name": "readOnly",
@@ -218,7 +218,7 @@
         },
         {
             "file": "lib/component.jsx",
-            "line": 197,
+            "line": 204,
             "description": "Inline style",
             "itemtype": "property",
             "name": "style",
@@ -229,7 +229,7 @@
         },
         {
             "file": "lib/component.jsx",
-            "line": 206,
+            "line": 213,
             "description": "The tabIndex\nDefault: 1",
             "itemtype": "property",
             "name": "tabIndex",
@@ -240,7 +240,7 @@
         },
         {
             "file": "lib/component.jsx",
-            "line": 216,
+            "line": 223,
             "description": "The anchor-target where the response should go into.",
             "itemtype": "property",
             "name": "target",

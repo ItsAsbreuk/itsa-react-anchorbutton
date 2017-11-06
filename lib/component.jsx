@@ -20,7 +20,6 @@ const React = require("react"),
     PropTypes = require("prop-types"),
     MAIN_CLASS = "itsa-anchorbutton",
     FORM_ELEMENT_CLASS_SPACES = " itsa-formelement",
-    ReactDom = require("react-dom"),
     utils = require("itsa-utils"),
     later = utils.later;
 
@@ -54,7 +53,6 @@ class Component extends React.Component {
      */
     componentDidMount() {
         const instance = this;
-        instance._anchorNode = ReactDom.findDOMNode(instance);
         if (instance.props.autoFocus) {
             instance._focusLater = later(() => instance.focus(), 50);
         }
@@ -119,7 +117,8 @@ class Component extends React.Component {
         return (
             <a {...props}
                 className={className}
-                onClick={instance.handleClick} >
+                onClick={instance.handleClick}
+                ref={node => instance._anchorNode = node} >
                 {props.children}
             </a>
         );
